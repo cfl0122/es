@@ -1,0 +1,15 @@
+# 测试配置
+Workbook_Name: '.\input.xlsx'  # 文件路径
+#Workbook_Name: '济宁市城市规划管理技术规定 2015年修订版.xlsx'
+Output_Path: '.\main_output.json'  # 输出路径
+
+# 固定配置
+Default:
+  Main_Term_Sheet_Name: '建筑间距模板'  # 主条款页名 此项已经不用，主要是通过下面的主条款页进行索引。
+  Main_Term_Sheet_Index: 3  # 主条款页索引
+  First_Header: '条款类型'  # 表头第一项
+  Last_Header: '备注'  # 表头最后一项
+  Terms_Number_Header: '规范序号'  # 表头规范序号项
+  Re_Terms_Number: '[1-9]\d*(.[1-9]\d*)*'  # 规范序号格式
+  Formula_Col: '公式'  # 表头公式项
+  Not_Split: ['高度分类特性-建筑一', '高度分类特性-建筑二'] # 模板一定有的属性，不需要切割成列表的属性
